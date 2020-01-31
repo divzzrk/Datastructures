@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class radixsort{
+	private:	int arr[],n;
+	public:		void sort();
+};
+void radixsort::sort()
+{
+	int bucket[10][20],buck_count[10];
+	int largest,i;
+	cout<<"Enter the number of elements: ";
+	cin>>n;
+	cout<<"Enter "<<n<<" elements:\n";
+	for(i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
+	cout<<"The entered digits before sorting are: ";
+	for(i=0;i<n;i++){
+		cout<<arr[i]<<"\t";
+	}
+}
+main()
+{
+	cout<<"Program to perform merge sort!!";
+	radixsort r;
+	r.sort();
+}
